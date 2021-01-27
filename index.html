@@ -197,37 +197,33 @@
         <script src="js/scripts.js"></script>
         <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
         <script type="text/javascript">
-            function copy_to_clipboard(str) {
-                prompt("Ctrl+C를 눌러 복사하세요.", str);
-            }
-
-              // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-              Kakao.init('c6d8279553e3cb4a84ad9c489f5d65f8');
-              // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-              Kakao.Link.createDefaultButton({
-                container: '#kakao-link-btn',
-                objectType: 'feed',
-                content: {
-                  title: '황태현❤주효선 결혼식에 초대합니다.',
-                  description: '2021년 2월 27일 오후 2시 \n라한 셀렉트(구 현대호텔) B2F 다이너스티 홀',
-                  imageUrl: 'https://pollackdotorri.github.io/assets/img/I1D_0422.jpg',
-              imageWidth: 412 ,
-              imageHeight: 240 ,
-                  link: {
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('c6d8279553e3cb4a84ad9c489f5d65f8');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            Kakao.Link.createDefaultButton({
+            container: '#kakao-link-btn',
+            objectType: 'feed',
+            content: {
+                title: '황태현❤주효선 결혼식에 초대합니다.',
+                description: '2021년 2월 27일 오후 2시 \n라한 셀렉트(구 현대호텔) B2F 다이너스티 홀',
+                imageUrl: 'https://pollackdotorri.github.io/assets/img/I5D_0422.jpg',
+            imageWidth: 412 ,
+            imageHeight: 240 ,
+                link: {
+                mobileWebUrl: 'https://pollackdotorri.github.io',
+                webUrl: 'https://pollackdotorri.github.io'
+                }
+            },
+            buttons: [
+                {
+                title: '웹으로 보기',
+                link: {
                     mobileWebUrl: 'https://pollackdotorri.github.io',
                     webUrl: 'https://pollackdotorri.github.io'
-                  }
-                },
-                buttons: [
-                  {
-                    title: '웹으로 보기',
-                    link: {
-                      mobileWebUrl: 'https://pollackdotorri.github.io',
-                      webUrl: 'https://pollackdotorri.github.io'
-                    }
-                  } 
-                ]
-              });
+                }
+                } 
+            ]
+            });
           </script>
     </body>
 </html>
