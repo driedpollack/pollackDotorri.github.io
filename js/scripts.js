@@ -49,7 +49,7 @@
     delegate: 'a',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
+    //mainClass: 'mfp-img-mobile',
     gallery: {
       enabled: true,
       navigateByImgClick: true,
