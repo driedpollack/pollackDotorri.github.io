@@ -38,12 +38,13 @@
         <header class="masthead" id="first">
             <div class="container h-100">
                 <div class="row h-100 align-items-center justify-content-center text-left">
-                    <div class="col-lg-10 align-self-end" style="top:62px;">
+                    <div class="col-lg-10 align-self-end">
                         <div class="text-uppercase" style="color: #ffe7f6 !important;    text-shadow: 1px 1px 7px black;
                         ">
                             황태현 + 주효선 <br />
                         </div>
-                        <div class="text-uppercase" style="color:#0f212f !important">
+                        <div class="text-uppercase" style="    color: #462b34 !important;
+                        text-shadow: 1px 1px 0 #ffcccc;">
                             2021.02.27/2PM  <br />
                             경주 라한셀렉트  <br />
                             B2F 다이너스티 홀 <br />
@@ -60,14 +61,23 @@
                         <h2 class="text-title mt-0">모시는 글</h2>
                         <hr class="divider light my-4" />
                         <p class="text-information mb-4 ned-lead animate-box fadeInUp animated" style="line-height:160%;">
-                            <br>
-                            무더운 여름날 함께 걷기 시작한 저희가 <br>
-                            앞으로 부부로써 서로를 의지하며 <br>
-                            행복으로 가득한 앞날을 약속하는 자리에 <br>
-                            여러분을 모시고자 합니다. <br>
-                            <br><br>
-                            귀중한 시간을 내셔서 저희 두 사람의 출발을 <br>
-                            함께 기뻐해주시면 감사하겠습니다. <br>
+                            <div style="
+                            line-height: 30px;
+                        ">
+                                봄물보다 깊으니라<br>
+                                가을산보다 높으니라<br>
+                                달보다 빛나리라<br>
+                                돌보다 굳으리라<br>
+                                사랑을 묻는 이 있거든<br>
+                                이대로만 말하리<br><br>
+                            </div>
+                            -한용운, 「사랑」-<br><br>
+
+                            모두가 힘든 시기에 초대하는 <br>
+                            저희의 마음이 무겁습니다만, <br>
+                            9만리 운해의 여정 <br>
+                            그 시작의 해로동혈에 <br>
+                            큰 축복을 주시면 감사하겠습니다.<br>
                         </p>
                     </div>
                     <div class="col-lg-8 text-center" style="padding-bottom:3em">
@@ -80,7 +90,8 @@
                     <div class="col-lg-9 text-center">
                         <h2 class="text-title mt-0">오시는 길</h2>
                         <hr class="divider light my-4" />
-                        <div>
+                        <div style="    display: flex;
+                        justify-content: center;">
                             <div style="font: 12px dotum,sans-serif; width: 320px; height: 232px; color: rgb(51, 51, 51); position: relative; margin:25px">
                                 <div style="height: 200px;">
                                     <a href="https://map.kakao.com/?urlX=1014273.0&amp;urlY=659578.0&amp;itemId=2139973957&amp;q=%EB%9D%BC%ED%95%9C%EC%85%80%EB%A0%89%ED%8A%B8%20%EA%B2%BD%EC%A3%BC&amp;srcid=2139973957&amp;map_type=TYPE_MAP&amp;from=roughmap" target="_blank">
@@ -197,32 +208,30 @@
         <script src="js/scripts.js"></script>
         <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
         <script type="text/javascript">
-            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
             Kakao.init('c6d8279553e3cb4a84ad9c489f5d65f8');
-            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
             Kakao.Link.createDefaultButton({
-            container: '#kakao-link-btn',
-            objectType: 'feed',
-            content: {
-                title: '황태현❤주효선 결혼식에 초대합니다.',
-                description: '2021년 2월 27일 오후 2시 \n라한 셀렉트(구 현대호텔) B2F 다이너스티 홀',
-                imageUrl: 'https://pollackdotorri.github.io/assets/img/I5D_0422.jpg',
-            imageWidth: 412 ,
-            imageHeight: 240 ,
-                link: {
-                mobileWebUrl: 'https://pollackdotorri.github.io',
-                webUrl: 'https://pollackdotorri.github.io'
-                }
-            },
-            buttons: [
-                {
-                title: '웹으로 보기',
-                link: {
-                    mobileWebUrl: 'https://pollackdotorri.github.io',
-                    webUrl: 'https://pollackdotorri.github.io'
-                }
-                } 
-            ]
+                container: '#kakao-link-btn',
+                objectType: 'feed',
+                content: {
+                    title: '황태현❤주효선 결혼식에 초대합니다.',
+                    description: '2021년 2월 27일 오후 2시 \n라한 셀렉트(구 현대호텔) B2F 다이너스티 홀',
+                    imageUrl: 'https://pollackdotorri.github.io/assets/img/I5D_0422.jpg',
+                    imageWidth: 412 ,
+                    imageHeight: 240 ,
+                    link: {
+                        mobileWebUrl: 'https://pollackdotorri.github.io',
+                        webUrl: 'https://pollackdotorri.github.io'
+                    }
+                },
+                buttons: [
+                    {
+                    title: '웹으로 보기',
+                        link: {
+                            mobileWebUrl: 'https://pollackdotorri.github.io',
+                            webUrl: 'https://pollackdotorri.github.io'
+                        }
+                    } 
+                ]
             });
           </script>
     </body>
