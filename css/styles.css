@@ -159,12 +159,12 @@ sup {
 }
 
 a {
-  color: #Df589b !important;
+  color: #f4623a;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #d6370c;
+  color: #Df589b;
   text-decoration: underline;
 }
 
@@ -484,10 +484,11 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
-  height: auto;
   max-height: 200px;
   margin: 10px;
+  width: 93px;
+  height: 93px;
+  background-size: contain;
 }
 
 .img-thumbnail {
@@ -10031,7 +10032,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0 0;
+  padding: 6rem 0 0;
 }
 
 #mainNav {
@@ -10099,7 +10100,7 @@ hr.light {
 
 header.masthead {
   padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  padding-bottom: calc(10rem - 0.5rem);
   background: url("../assets/img/I5D_0700.jpg"), linear-gradient(to bottom, rgba(237, 243, 239, 0.932) 0%, rgba(231, 241, 224, 0.8) 100%);
   background-position: center;
   background-repeat: no-repeat;

@@ -45,11 +45,10 @@
   $(window).scroll(navbarCollapse);
 
   // Magnific popup calls
-  $('#portfolio').magnificPopup({
-    delegate: 'a',
+  $('#portfolio .portfolio-box').magnificPopup({
     type: 'image',
     tLoading: 'Loading image #%curr%...',
-    //mainClass: 'mfp-img-mobile',
+    mainClass: 'mfp-img-mobile',
     gallery: {
       enabled: true,
       navigateByImgClick: true,
