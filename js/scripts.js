@@ -44,6 +44,28 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  
+  // 팝업
+  $(function(){
+    $('.h_btn').click(function(){
+      $('.remittance_pop_h').show();
+    });
+    $('.w_btn').click(function(){
+      $('.remittance_pop_w').show();
+    });
+    $('.h_p_btn').click(function(){
+      $('.remittance_pop_h_p').show();
+    });
+    $('.w_p_btn').click(function(){
+      $('.remittance_pop_w_p').show();
+    });
+    $('.close_btn').click(function(){
+      $('.remittance_pop_h, .remittance_pop_w, .remittance_pop_h_p, .remittance_pop_w_p').hide();
+    });
+  });
+
+
+  
   // Magnific popup calls
   $('#portfolio .portfolio-box').magnificPopup({
     type: 'image',

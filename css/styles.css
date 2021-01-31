@@ -494,7 +494,6 @@ mark,
 #contact {background:none;}
 #contact .call_area {overflow:hidden; padding:30px 30px; background:#f9f9f9;}
 #contact dl {width:100%; padding: 10px 0 10px 0;}
-#contact dl.wife {padding-bottom:30px;}
 #contact dl dt {float: left; margin-top: 4%; width: 56%; padding: 0px;}
 #contact dl dt span.blue {font-weight:normal; color: #777; margin-right: 5%;}
 #contact dl dt span.pink {font-weight:normal; color: #777; margin-right: 5%;}
@@ -511,22 +510,33 @@ mark,
 #contact .greeting {color:#555; font-size: 16px; padding: 5% 5% 10% 5%; line-height: 37px;}
 #contact .parent_contect {background:none;}
 
+.remittance .remittance_btn_bx{width: 80%; margin: 0 auto;}
+.remittance .remittance_btn_bx .btn_bx_1{width: 47.5%; padding: 0; width: 100%; margin: 0 auto;}
+.remittance .remittance_btn_bx .btn_bx_2{width: 47.5%; padding: 0; padding-top: 6%; width: 80%; margin: 0 auto;}
+.remittance .remittance_btn_bx p > span{font-weight: 600; font-size: 17px; color: #3b3b3b; display: inline-block; line-height: 40px; display: none;}
+.remittance .remittance_btn_bx p > a{margin: 0; width: 90%;}
+.remittance_pop_h, .remittance_pop_w, .remittance_pop_h_p .remittance_pop_w_p {top: -10%;}
 
-.parent_contect {clear:both; overflow:hidden;}
-.parent_contect > ul > li {float:left; width:50%; text-align:center;}
-.parent_contect > ul > li > strong { display:block; font-weight:bold; font-size:15px; height:26px; line-height:26px; padding:7px 0px;}
-.parent_contect > ul > li > strong > span {display:block; font-size:15px; height:26px;}
-.parent_contect > ul > li > ul {margin:15px 0px; color:#000;}
-.parent_contect > ul > li > ul.btn_contact_off>li { margin-bottom:10px; padding-left:10px; }
-.parent_contect .dot_line {background:url(/resources/skin/typo/bg_dotline.png) repeat-y left top; background-size:2px auto; -webkit-background-size:2px auto; -moz-background-size:2px auto;}
-.parent_contect li.wife strong {color:#ef5685;}
-.parent_contect .btn_contact {text-align:center; padding:10px 0px;}
-.parent_contect .btn_contact li { display:inline-block;}
-.parent_contect .blue { color:#469dcf;}
-.parent_contect .pink { color:#ef5685;}
-.parent_contect .btn_toggle {position:absolute; right:8px; top:12px; overflow:hidden;}
-.parent_contect .btn_toggle a {display:block; width:18px; height:18px; background-size:18px auto; -webkit-background-size:18px auto; -moz-background-size:18px auto; overflow:hidden;}
-.parent_contect .btn_toggle.off a {background-position:center -19px !important;}
+.remittance{display: block; width: 100%; border-top: 1px solid #dddddd; box-sizing: border-box; padding: 18% 0 18% 0; position: relative;text-align: center;    font-family: 'IropkeBatang';}
+.remittance .remittance_title{font-weight: 600; font-size: 17px; color: #414141; padding-bottom: 2%;    font-family: 'IropkeBatang';}
+.remittance .remittance_sub_title{font-weight: normal; font-size: 15px; padding-bottom: 8%; color: #797979;}
+/* 신랑, 신부 */
+.remittance .remittance_btn_bx p > span{font-weight: 600; font-size: 17px; color: #3b3b3b; display: inline-block; line-height: 40px;}
+/* 버튼 스킨 */
+.remittance .remittance_btn_bx p > a{display: inline-block; line-height: 41px; color: white; font-size: 13px; background-color: #efa78e; border-radius: 22px; padding: 0 5.5%; margin-left: 12%; font-family: 'Noto Sans Kr', sans-serif;width:54%}
+.remittance .remittance_btn_bx .btn_bx_1{padding-bottom: 8%;}
+.remittance .remittance_btn_bx .btn_bx_2{padding-bottom: 0;}
+
+.remittance_pop_h, .remittance_pop_w, .remittance_pop_h_p, .remittance_pop_w_p {position: absolute; top: -1px; left: 0; width: 100%; background-color: #fff;}
+.remittance_pop_h .remittance_pop_inner, 
+.remittance_pop_w .remittance_pop_inner,
+.remittance_pop_h_p .remittance_pop_inner, 
+.remittance_pop_w_p .remittance_pop_inner{background-color: #fafafa; border: 1px solid #d0d0d0; width: 90%; margin-left: 5%; padding: 8% 7.5% 5% 7.5%; box-sizing: border-box; position: relative;}
+.remittance_pop_inner .account_info{color: #232323; text-align: left; font-family: 'Noto Sans KR', sans-serif; font-weight: 600; line-height: 40px; border-bottom: 1px solid #aaa; font-size: 18px; margin-bottom: 8.5%;}
+.remittance_pop_inner .account_c{color: #232323; text-align: left; font-family: 'Noto Sans KR', sans-serif;  font-size: 18px; padding-bottom: 2.5%;    margin-bottom: 0px;}
+.remittance_pop_inner .account_num{color: #232323; text-align: left; font-family: 'Noto Sans KR', sans-serif;  font-size: 18px; line-height: 18px;}
+.remittance_pop_inner .copy_btn{display: block; line-height: 26px; width: 30%; margin-left: 70%; margin-top: -36px; background-color: #dddddd; border-radius: 4px; font-size: 12px; font-family: 'Noto Sans KR', sans-serif; color: #232323;}
+.remittance_pop_inner .close_btn{ width: 100%; line-height: 52px; line-height: 52px; color: white; background-color: #efa78e; display: block; border-radius: 5px; margin-top: 10%; font-family: 'Noto Sans KR', sans-serif; font-size: 18px;}
 
 
 ul, li {
@@ -6128,7 +6138,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #fff4f5!important;
+  
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
