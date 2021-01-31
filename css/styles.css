@@ -491,6 +491,49 @@ mark,
   background-size: contain;
 }
 
+#contact {background:none;}
+#contact .call_area {overflow:hidden; padding:30px 30px; background:#f9f9f9;}
+#contact dl {width:100%; padding: 10px 0 10px 0;}
+#contact dl.wife {padding-bottom:30px;}
+#contact dl dt {float: left; margin-top: 4%; width: 56%; padding: 0px;}
+#contact dl dt span.blue {font-weight:normal; color: #777; margin-right: 5%;}
+#contact dl dt span.pink {font-weight:normal; color: #777; margin-right: 5%;}
+#contact dl .input_husband {font-size: 18px;color:#555;}
+#contact dl .input_wife {font-size: 18px;color:#555;}
+.parent_contect .blue {color: #777; font-size:14px; padding:0 5px 0 0;}
+.parent_contect .pink {color: #777; font-size:14px; padding:0 5px 0 0;}
+.parent_contect	.input_blue_p_n, .parent_contect .input_blue_m_n {color: #555; font-weight: 700;}
+.parent_contect	.input_pink_p_n, .parent_contect .input_pink_m_n {color: #555; font-weight: 700;}
+.parent_contect .btn_toggle {margin: 0 auto; width: 20px; position:inherit; right:; top:;}
+.parent_contect .btn_toggle {margin: 0 auto; width: 20px; position: relative; top: 30px; right: 0px; overflow: hidden;}
+.parent_contect > ul > li > strong > span {display: block; font-size: 15px; height: 26px; color: #333;}
+#contact dl dd {padding:0px 26px; width: 12%; float: left; margin-top:3%;}
+#contact .greeting {color:#555; font-size: 16px; padding: 5% 5% 10% 5%; line-height: 37px;}
+#contact .parent_contect {background:none;}
+
+
+.parent_contect {clear:both; overflow:hidden;}
+.parent_contect > ul > li {float:left; width:50%; text-align:center;}
+.parent_contect > ul > li > strong { display:block; font-weight:bold; font-size:15px; height:26px; line-height:26px; padding:7px 0px;}
+.parent_contect > ul > li > strong > span {display:block; font-size:15px; height:26px;}
+.parent_contect > ul > li > ul {margin:15px 0px; color:#000;}
+.parent_contect > ul > li > ul.btn_contact_off>li { margin-bottom:10px; padding-left:10px; }
+.parent_contect .dot_line {background:url(/resources/skin/typo/bg_dotline.png) repeat-y left top; background-size:2px auto; -webkit-background-size:2px auto; -moz-background-size:2px auto;}
+.parent_contect li.wife strong {color:#ef5685;}
+.parent_contect .btn_contact {text-align:center; padding:10px 0px;}
+.parent_contect .btn_contact li { display:inline-block;}
+.parent_contect .blue { color:#469dcf;}
+.parent_contect .pink { color:#ef5685;}
+.parent_contect .btn_toggle {position:absolute; right:8px; top:12px; overflow:hidden;}
+.parent_contect .btn_toggle a {display:block; width:18px; height:18px; background-size:18px auto; -webkit-background-size:18px auto; -moz-background-size:18px auto; overflow:hidden;}
+.parent_contect .btn_toggle.off a {background-position:center -19px !important;}
+
+
+ul, li {
+  list-style: none;
+  list-style-image: none;
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
