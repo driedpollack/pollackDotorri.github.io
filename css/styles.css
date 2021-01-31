@@ -532,11 +532,11 @@ mark,
 .remittance_pop_w .remittance_pop_inner,
 .remittance_pop_h_p .remittance_pop_inner, 
 .remittance_pop_w_p .remittance_pop_inner{background-color: #fafafa; border: 1px solid #d0d0d0; width: 90%; margin-left: 5%; padding: 8% 7.5% 5% 7.5%; box-sizing: border-box; position: relative;}
-.remittance_pop_inner .account_info{color: #232323; text-align: left; font-family: 'Noto Sans KR', sans-serif; font-weight: 600; line-height: 40px; border-bottom: 1px solid #aaa; font-size: 18px; margin-bottom: 8.5%;}
-.remittance_pop_inner .account_c{color: #232323; text-align: left; font-family: 'Noto Sans KR', sans-serif;  font-size: 18px; padding-bottom: 2.5%;    margin-bottom: 0px;}
-.remittance_pop_inner .account_num{color: #232323; text-align: left; font-family: 'Noto Sans KR', sans-serif;  font-size: 18px; line-height: 18px;}
-.remittance_pop_inner .copy_btn{display: block; line-height: 26px; width: 30%; margin-left: 70%; margin-top: -36px; background-color: #dddddd; border-radius: 4px; font-size: 12px; font-family: 'Noto Sans KR', sans-serif; color: #232323;}
-.remittance_pop_inner .close_btn{ width: 100%; line-height: 52px; line-height: 52px; color: white; background-color: #efa78e; display: block; border-radius: 5px; margin-top: 10%; font-family: 'Noto Sans KR', sans-serif; font-size: 18px;}
+.remittance_pop_inner .account_info{color: #232323; text-align: left; line-height: 40px; border-bottom: 1px solid #aaa; margin-bottom: 8.5%;}
+.remittance_pop_inner .account_c{color: #232323; text-align: left; padding-bottom: 2.5%;    margin-bottom: 0px;}
+.remittance_pop_inner .account_num{color: #232323; text-align: left; line-height: 18px;}
+.remittance_pop_inner .copy_btn{display: block; line-height: 26px; width: 30%; margin-left: 70%; margin-top: -36px; background-color: #dddddd; border-radius: 4px; font-size: 12px; color: #232323;}
+.remittance_pop_inner .close_btn{ width: 100%; line-height: 52px; line-height: 52px; color: white; background-color: #efa78e; display: block; border-radius: 5px; margin-top: 10%;}
 
 
 ul, li {
