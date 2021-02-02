@@ -10153,13 +10153,13 @@ hr.light {
 #bgm_on {
   background: url("../assets/img/bgm_on.png");
   width: 70px;
-  height: 28px;
+  height: 25px;
   background-size: contain;
 }
 #bgm_off {
   background: url("../assets/img/bgm_off.png");
   width: 70px;
-  height: 28px;
+  height: 25px;
   background-size: contain;
 }
 
