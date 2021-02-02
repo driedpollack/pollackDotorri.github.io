@@ -10150,6 +10150,18 @@ hr.light {
     color: #Df589b;
   }
 }
+#bgm_on {
+  background: url("../assets/img/bgm_on.png");
+  width: 70px;
+  height: 28px;
+  background-size: contain;
+}
+#bgm_off {
+  background: url("../assets/img/bgm_off.png");
+  width: 70px;
+  height: 28px;
+  background-size: contain;
+}
 
 header.masthead {
   padding-top: 10rem;
