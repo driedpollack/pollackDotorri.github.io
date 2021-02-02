@@ -18,12 +18,24 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
+    <audio id="bgm" loop autoplay><source src="assets/mp3/bgm.mp3" type="audio/mp3"></audio>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top">Ju&Hwang</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="bgm-wrap" style="text-align: left;
+                padding: 23px 130px 5px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 100;">
+                    <div class="bgm">
+                        <img src="assets/img/bgm_on.png" id="bgm_on" width="70" alt="bgm" style="display: none;">
+                        <img src="assets/img/bgm_off.png" id="bgm_off" width="70" alt="bgm">
+                    </div>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#first">처음으로</a></li>
@@ -261,17 +273,39 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+        <script>
+            var audioButton = document.getElementById("bgm_off"); 
+            audioButton.addEventListener('click', (e)=> {
+                var audio = document.getElementById("bgm");
+                audio.play();
+                $("#bgm_off").hide();
+                $("#bgm_on").show();
+            });
+            var audioButton = document.getElementById("bgm_on"); 
+            audioButton.addEventListener('click', (e)=> {
+                var audio = document.getElementById("bgm");
+                audio.pause();                
+                $("#bgm_off").show();
+                $("#bgm_on").hide();
+            });
+        </script>
         <script type="text/javascript">
-			//복사
+            
+            //복사
             function copyToClipboard(elementId) {
-            var aux = document.createElement("input");
-            aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-            document.body.appendChild(aux);
-            aux.select();
-            document.execCommand("copy");
-            document.body.removeChild(aux);
-            alert("복사되었습니다.");
-  }
+                var aux = document.createElement("input");
+                aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+                document.body.appendChild(aux);
+                aux.select();
+                document.execCommand("copy");
+                document.body.removeChild(aux);
+                alert("복사되었습니다.");
+            }
+            function playBgm(){ 
+                var audio = document.getElementById("bgm"); 
+                audio.play();
+                debugger;
+            }            
           </script>
     </body>
 </html>
